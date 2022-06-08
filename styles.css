@@ -1,0 +1,390 @@
+body {
+    background-image:url(images/background.jpg);
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+.wrapper {
+	width: 88%;
+	max-width: 1960px;
+	margin: 0 auto;
+}
+
+.crew li{
+    display: inline-block;
+    margin: 0 auto;
+    padding: 0 1em;
+    text-align: center;
+}
+
+.crew img {
+    margin: 0;
+}
+
+.crewname {
+    color: white;
+    font-size: 32;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+#star {
+    position: relative;
+}
+
+#star::before {
+    background-image: url(images/starfield.gif);
+    background-size: cover;
+    opacity: 0.7;
+    position: absolute;
+    z-index: -1;
+    content: "";
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+#star2 {
+    position: relative;
+}
+
+#star2::before {
+    background-image: url(images/redstarfield.gif);
+    background-size: cover;
+    opacity: 0.7;
+    position: absolute;
+    z-index: -1;
+    content: "";
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+#doitforher {
+    color: red;
+    font-weight: bold;
+    font-size: 64;
+    display: block;
+    text-align: center;
+    animation: animc 2s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+
+@keyframes animc {
+	5% {
+		color: aqua;
+	}
+	20% {
+		color: lawngreen;
+	}
+	50% {
+		color: red;
+	}
+    75% {
+		color: purple;
+	}
+	100% {
+		color: orange;
+	}
+}
+
+#homeland {
+    position: relative;
+    z-index: -1;
+}
+
+#homeland-overlay {
+    position: absolute;
+    left: 0; 
+    right: 0;
+}
+
+/* Navigation
+------------------------------------------*/
+
+nav {
+    border-color: aliceblue;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    margin-bottom: 0;
+}
+
+nav li {
+    margin-left: .25em;
+    margin-right: .25em;
+    font-size: 3.5em;
+    font-family: sans-serif;
+    position: relative;
+    text-align: center;
+}
+
+nav img {
+    margin-left: .5em;
+    margin-right: .5em;
+}
+
+a {
+    color: orange;
+    padding: 0 .5em;
+    text-decoration: none;
+}
+
+a:hover {
+	background: blue;
+}
+
+hr {
+    border-color: yellow;
+}
+
+/* Cute Lolis
+------------------------------------------*/
+img {
+    height: 12em;
+    margin: 0 auto;
+    display: inline-block;
+}
+
+@keyframes anim1 {
+	0% {
+		left:0px;
+	}
+	25% {
+		left:-270px;
+	}
+	75% {
+		left:-145px;
+	}
+	90% {
+		left:-270px;
+	}
+	100% {
+		left:-145px;
+	}
+}
+
+.move {
+	position: relative;
+	animation: anim1 10s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+
+@keyframes anim2 {
+	0% {
+		left:69px;
+	}
+	25% {
+		left:420px;
+	}
+	75% {
+		left:-145px;
+	}
+	80% {
+		left:-270px;
+	}
+	100% {
+		left:-145px;
+	}
+}
+
+.move2 {
+	position: relative;
+	animation: anim2 20s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+
+@keyframes anim3 {
+	0% {
+		left:-32px;
+	}
+	50% {
+		left:-420px;
+	}
+	75% {
+		left:-100px;
+	}
+	80% {
+		left:-50px;
+	}
+	95% {
+		left:-145px;
+	}
+    100% {
+        left:-32px
+    }
+}
+
+.move3 {
+	position: relative;
+	animation: anim3 30s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+
+@keyframes anim4 {
+	0% {
+		left:69px;
+	}
+	25% {
+		left:34px;
+	}
+	50% {
+		left:145px;
+	}
+	80% {
+		left:270px;
+	}
+	100% {
+		left:145px;
+	}
+}
+
+.move4 {
+	position: relative;
+	animation: anim4 5s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+
+@keyframes anim5 {
+	0% {
+		left:0px;
+	}
+	25% {
+		left:270px;
+	}
+	75% {
+		left:145px;
+	}
+	90% {
+		left:270px;
+	}
+	95% {
+		left:145px;
+	}
+	100% {
+		left:0px;
+	}
+}
+
+.move5 {
+	position: relative;
+	animation: anim5 10s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+
+@keyframes anim6 {
+	0% {
+		left:-69px;
+	}
+	25% {
+		left:-420px;
+	}
+	75% {
+		left:145px;
+	}
+	80% {
+		left:270px;
+	}
+	100% {
+		left:145px;
+	}
+}
+
+.move6 {
+	position: relative;
+	animation: anim6 20s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+
+@keyframes anim7 {
+	0% {
+		left:32px;
+	}
+	50% {
+		left:420px;
+	}
+	75% {
+		left:100px;
+	}
+	80% {
+		left:50px;
+	}
+	100% {
+		left:145px;
+	}
+}
+
+.move7 {
+	position: relative;
+	animation: anim7 30s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+
+@keyframes anim8 {
+	0% {
+		left:-69px;
+	}
+	25% {
+		left:-34px;
+	}
+	50% {
+		left:-145px;
+	}
+	80% {
+		left:-270px;
+	}
+	95% {
+		left:-145px;
+	}
+    100% {
+        left:-69px
+    }
+}
+
+.move8 {
+	position: relative;
+	animation: anim8 5s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+
+@keyframes anim9 {
+	0% {
+		left:10px;
+	}
+	50% {
+		left:340px;
+	}
+	80% {
+		left:-23px;
+	}
+	100% {
+		left:-145px;
+	}
+}
+
+.move9 {
+	position: relative;
+	animation: anim9 15s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}

@@ -1,0 +1,134 @@
+body {
+    background-image:url(images/kumaback.jpg);
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    color: white;
+}
+
+.header {
+    color: white;
+    font-family: cursive;
+    font-size: 64;
+    font-weight: bold;
+    text-align: center;
+}
+
+.header2 {
+    color: white;
+    font-family: cursive;
+    font-size: 32;
+    font-weight: bold;
+    text-align: center;
+}
+
+li {
+    list-style: none;
+}
+
+.wrapper {
+	width: 88%;
+	max-width: 1960px;
+	margin: 0 auto;
+}
+
+.crew li{
+    display: inline-block;
+    margin: 0 auto;
+    padding: 0 1em;
+    text-align: center;
+}
+
+.crew img {
+    margin: 0;
+}
+
+.crewname {
+    color: white;
+    font-size: 32;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+#star {
+    position: relative;
+}
+
+#star::before {
+    background-image: url(images/starfield.gif);
+    background-size: cover;
+    opacity: 0.7;
+    position: absolute;
+    z-index: -1;
+    content: "";
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+/* Navigation
+------------------------------------------*/
+
+nav {
+    border-color: aliceblue;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    margin-bottom: 0;
+}
+
+nav li {
+    margin-left: .25em;
+    margin-right: .25em;
+    font-size: 3.5em;
+    font-family: sans-serif;
+    position: relative;
+    text-align: center;
+}
+
+nav img {
+    margin-left: .5em;
+    margin-right: .5em;
+}
+
+a {
+    color: orange;
+    padding: 0 .5em;
+    text-decoration: none;
+}
+
+a:hover {
+	background: blue;
+}
+
+hr {
+    border-color: yellow;
+}
+
+/* KumaAds
+------------------------------------------*/
+.kumaads{
+    text-align: center;
+}
+
+.kumaads img {
+    width: 550px;
+    margin: auto 2em;
+    display: inline-block;
+}
+
+figure { 
+    display: inline-block;
+}
+
+figcaption{
+    color: white;
+}
